@@ -7,27 +7,29 @@
 }
 
 .career-photo {
-  width: 1226px;
-  height: 333px;
-  /* Add any additional styles as needed */
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.career-logos {
+.career-logos-container {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
 }
 
-.career-logo {
+.career-logo-description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 10px; /* Изменено с margin-bottom на margin */
+  text-align: center;
 }
 
 .logo-image {
-  width: 150px;
+  width: 130px;
   height: 150px;
-  /* Add any additional styles as needed */
+  margin-bottom: 10px;
 }

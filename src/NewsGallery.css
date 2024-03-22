@@ -5,8 +5,9 @@
 }
 
 .sidebar {
-  width: 220px; /* Ширина бокового меню */
+  width: 220px;
   padding: 10px;
+  background-color: #f0f0f0;
 }
 
 .sidebar button {
@@ -14,14 +15,14 @@
   width: 100%;
   border-radius: 10px;
   border: none;
-  background-color: #f0f0f0; /* Цвет фона кнопок бокового меню */
+  background-color: #f0f0f0;
   padding: 10px;
   cursor: pointer;
-  margin-bottom: 10px; /* Отступ между кнопками */
+  margin-bottom: 10px;
 }
 
 .sidebar button:hover {
-  background-color: #ccc; /* Изменение цвета фона кнопок при наведении */
+  background-color: #ccc;
 }
 
 .news-tiles {
@@ -31,30 +32,32 @@
 }
 
 .news-tile {
-  width: 275px; /* Ширина плитки новости */
-  height: 280px; /* Высота плитки новости */
-  margin: 10px;
-  border: 1px solid #ccc; /* Граница плитки новости */
+  width: 275px;
+  height: 280px;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  overflow: hidden; /* Отсечение лишнего контента */
+  margin: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .news-tile:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень при наведении на плитку новости */
+  transform: scale(1.05);
 }
 
 .news-photo {
   width: 100%;
-  height: 177px; /* Высота области для фотографии */
+  height: 177px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   overflow: hidden;
 }
 
 .news-photo img {
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Растягивание фотографии для заполнения области */
+  max-height: 177px; /* Максимальная высота для фото */
+  object-fit: cover;
 }
 
 .news-content {
@@ -62,15 +65,57 @@
 }
 
 .news-content h3 {
-  margin: 0;
+  margin-top: 0;
 }
 
 .news-details {
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
-.expanded {
-  height: auto !important; /* Развернутая плитка новости */
-  border-radius: 10px; /* Обновляем скругление границы при развернутой новости */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень при развернутой новости */
+/* NewsGallery.css */
+
+.news-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+.popup-content-news {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 70vw; /* Уменьшаем максимальную ширину окна попапа до 80% ширины экрана */
+  max-height: 70vh; /* Уменьшаем максимальную высоту окна попапа до 80% высоты экрана */
+  overflow: auto; /* Добавление прокрутки */
+}
+
+.popup-photo-news img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.popup-details-news h2 {
+  margin-top: 0;
+}
+
+.popup-details-news p {
+  margin-bottom: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
