@@ -1,0 +1,55 @@
+/* VideoGallery.css */
+
+.video-gallery {
+    display: flex;
+  }
+  
+  .video-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #f0f0f0; /* Цвет фона бокового меню */
+    padding: 20px;
+    border-radius: 10px; /* Добавляем округлённости */
+  }
+  
+  .video-sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #f0f0f0; /* Цвет фона кнопок */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Добавляем округлённости */
+  }
+  
+  .video-sidebar button:hover {
+    background-color: #ccc; /* Изменяем цвет фона при наведении */
+  }
+  
+  .videos-grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирование элементов по горизонтали */
+  }
+  
+  .video-item {
+    width: 300px;
+    margin: 30px;
+  }
+  
+  .video-item iframe {
+    width: 336px;
+    height: 188px;
+    border-radius: 5px; /* Добавляем округлённости */
+  }
+  
+  .video-item h3 {
+    margin: 5px 0;
+  }
+  
+  .video-item p {
+    margin: 5px 0;
+  }
+  

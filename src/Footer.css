@@ -1,0 +1,50 @@
+.footer {
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.footer .left img,
+.footer .right img {
+  width: 30px; /* Настройте размеры логотипов/фото */
+  margin-right: 10px;
+}
+
+.footer .center p {
+  font-size: 14px;
+}
+
+.footer .right {
+  height: auto;
+}
+.footer .right .contact-info {
+  display: flex;
+}
+
+.footer .right .email,
+.footer .right .phone {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.footer .right .email img,
+.footer .right .phone img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer p {
+  margin: 0;
+}

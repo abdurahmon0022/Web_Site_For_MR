@@ -1,0 +1,57 @@
+/* Ключевые кадры для анимации */
+@keyframes slideAnimation {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Применение анимации к слайдеру */
+.slider-container {
+  animation: slideAnimation 0.5s ease-in-out; /* Применяем анимацию к слайдеру */
+  width: 100%; /* Ширина контейнера будет равна ширине экрана */
+  height: auto; /* Автоматическая высота, чтобы подстраиваться под содержимое */
+  position: relative;
+ 
+}
+
+/* Медиа-запрос для устройств с шириной экрана до 320px */
+@media (max-width: 320px) {
+  .slider-container {
+    width: 100%; /* Ширина контейнера будет равна ширине экрана */
+  }
+}
+
+
+.slider-image {
+  animation: slideAnimation 0.5s ease-in-out; /* Применяем анимацию к слайдеру */
+  width: 100%; /* Изображение будет занимать всю доступную ширину контейнера */
+  height: 600px; /* Автоматическая высота, чтобы соответствовать пропорциям изображения */
+  object-fit: cover; /* Это свойство обеспечивает корректное масштабирование изображения */
+}
+
+
+
+.slider-button-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px; /* Отступы по бокам контейнера */
+  box-sizing: border-box; /* Учитываем отступы при определении ширины */
+}
+
+
+.slider-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.5); /* Цвет фона кнопок с полупрозрачностью */
+  border: none; /* Убираем границы */
+  font-size: 24px; /* Размер шрифта */
+  color: white; /* Устанавливаем белый цвет для символов */
+  cursor: pointer; /* Добавляем указатель при наведении */
+  border-radius: 50%; /* Делаем круглую кнопку */
+  display: flex; /* Включаем flexbox для выравнивания содержимого по центру */
+  justify-content: center; /* Выравниваем содержимое по горизонтали по центру */
+  align-items: center; /* Выравниваем содержимое по вертикали по центру */
+}

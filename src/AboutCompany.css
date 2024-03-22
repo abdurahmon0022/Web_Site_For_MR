@@ -1,0 +1,54 @@
+.side-menu-container {
+    display: flex;
+    max-height: 80vh; /* Определяем максимальную высоту боковой панели */
+  }
+  
+  .side-menu {
+    flex: 0 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .menu-button {
+    display: block;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .company-info {
+    padding: 50px;
+    position: relative;
+  }
+  
+  .company-info h2 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Добавляем отступ между заголовком и следующим элементом */
+  }
+  
+  .social-icons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  

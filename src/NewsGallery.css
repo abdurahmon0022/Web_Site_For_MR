@@ -1,0 +1,76 @@
+/* NewsGallery.css */
+
+.news-gallery {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px; /* Ширина бокового меню */
+  padding: 10px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f0f0; /* Цвет фона кнопок бокового меню */
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Отступ между кнопками */
+}
+
+.sidebar button:hover {
+  background-color: #ccc; /* Изменение цвета фона кнопок при наведении */
+}
+
+.news-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-tile {
+  width: 275px; /* Ширина плитки новости */
+  height: 280px; /* Высота плитки новости */
+  margin: 10px;
+  border: 1px solid #ccc; /* Граница плитки новости */
+  border-radius: 10px;
+  overflow: hidden; /* Отсечение лишнего контента */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.news-tile:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень при наведении на плитку новости */
+}
+
+.news-photo {
+  width: 100%;
+  height: 177px; /* Высота области для фотографии */
+  overflow: hidden;
+}
+
+.news-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Растягивание фотографии для заполнения области */
+}
+
+.news-content {
+  padding: 10px;
+}
+
+.news-content h3 {
+  margin: 0;
+}
+
+.news-details {
+  margin-top: 10px;
+}
+
+.expanded {
+  height: auto !important; /* Развернутая плитка новости */
+  border-radius: 10px; /* Обновляем скругление границы при развернутой новости */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень при развернутой новости */
+}

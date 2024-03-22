@@ -1,0 +1,97 @@
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .menuColumn-logo,
+  .galleryColumn-logo,
+  .socialMediaColumn-logo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menuButton-logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .menuButton-logo:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .gallery-logo {
+    display: flex;
+  }
+  
+  .column-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.751); /* Полупрозрачный черный цвет */
+    z-index: 9998; /* Выше, чем у остальных элементов, но ниже, чем у попапа */
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 9999; /* Поверх всего */
+  }
+  
+  .popupContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logoColumn {
+    padding-right: 20px;
+  }
+
+  .closeButton {
+    cursor: pointer;
+  }
+  
+  /* Остальные стили остаются без изменений */
+   
+  .selectedLogo {
+    width: 120px;
+    height: 120px;
+  }
+  
+
+  
+  .socialMediaColumn-logo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .socialLogo {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  
